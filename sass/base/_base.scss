@@ -34,8 +34,7 @@ body {
     font-family: sans-serif;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: 'Source Sans Pro', sans-serif;
-
+    font-family: 'Montserrat-Regular', sans-serif;
 }
 
 a {
@@ -44,7 +43,10 @@ a {
 }
 
 li {
+    color: #4831d4;
     list-style: none;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 input:focus,
