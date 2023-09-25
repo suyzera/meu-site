@@ -1,38 +1,11 @@
-// ---
-const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
-const smallMenu = document.querySelector('.header__sm-menu')
-const headerHamMenuBtn = document.querySelector('.header__main-ham-menu')
-const headerHamMenuCloseBtn = document.querySelector(
-  '.header__main-ham-menu-close'
-)
-const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
+const closeMenuButton = document.getElementById('mobile-menu-close-button')
+const openMenuButton = document.getElementById('mobile-menu-open-button')
+const mobileMenu = document.getElementById('mobile-menu')
 
-hamMenuBtn.addEventListener('click', () => {
-  if (smallMenu.classList.contains('header__sm-menu--active')) {
-    smallMenu.classList.remove('header__sm-menu--active')
-  } else {
-    smallMenu.classList.add('header__sm-menu--active')
-  }
-  if (headerHamMenuBtn.classList.contains('d-none')) {
-    headerHamMenuBtn.classList.remove('d-none')
-    headerHamMenuCloseBtn.classList.add('d-none')
-  } else {
-    headerHamMenuBtn.classList.add('d-none')
-    headerHamMenuCloseBtn.classList.remove('d-none')
-  }
+openMenuButton.addEventListener('click', () => {
+  mobileMenu.style.display = "block"
 })
 
-for (let i = 0; i < headerSmallMenuLinks.length; i++) {
-  headerSmallMenuLinks[i].addEventListener('click', () => {
-    smallMenu.classList.remove('header__sm-menu--active')
-    headerHamMenuBtn.classList.remove('d-none')
-    headerHamMenuCloseBtn.classList.add('d-none')
-  })
-}
-
-// ---
-const headerLogoConatiner = document.querySelector('.header__logo-container')
-
-headerLogoConatiner.addEventListener('click', () => {
-  location.href = 'index.html'
+closeMenuButton.addEventListener('click', () => {
+  mobileMenu.style.display = "none";
 })

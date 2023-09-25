@@ -1,4 +1,8 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: transparent;
   padding: 10%;
   display: flex;
@@ -19,6 +23,10 @@
   right: 0;
   bottom: 0;
   padding: 10%;
+
+  &--hidden {
+    display: none;
+  }
 
   &-header {
     display: flex;
@@ -48,6 +56,71 @@
       text-transform: uppercase;
       color: #cbc9e2;
     }
+  }
+
+  &-network {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+
+    &__github {
+      background: black;
+      width: 32px;
+      height: 32px;
+    }
+
+    &__linkedin {
+      background: black;
+      width: 32px;
+      height: 32px;
+
+      >img {
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+.presentation {
+  height: 100vh;
+
+  &_texts {
+    padding: 25vh 50px 0 50px;
+    background: #4831d4;
+
+    &_title {
+      max-width: 220px;
+
+      >h1 {
+        font-size: 5em;
+        line-height: 1.1;
+        margin-bottom: .5em;
+      }
+
+      >h2 {
+        font-size: 2em;
+      }
+    }
+
+    &_subtitle {
+      margin-top: 60px;
+      display: flex;
+
+      >p {
+        display: block;
+        max-width: 170px;
+
+        &:first-child {
+          margin-right: 25px;
+        }
+
+      }
+    }
+  }
+
+  &_profile {
+    >img {}
   }
 
 }

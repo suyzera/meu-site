@@ -142,6 +142,10 @@ textarea {
   resize: none; }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: transparent;
   padding: 10%;
   display: flex;
@@ -159,6 +163,8 @@ textarea {
   right: 0;
   bottom: 0;
   padding: 10%; }
+  .mobile-menu--hidden {
+    display: none; }
   .mobile-menu-header {
     display: flex;
     justify-content: space-between;
@@ -177,3 +183,39 @@ textarea {
     .mobile-menu-contact li:first-child {
       text-transform: uppercase;
       color: #cbc9e2; }
+  .mobile-menu-network {
+    padding: 20px;
+    display: flex;
+    gap: 10px; }
+    .mobile-menu-network__github {
+      background: black;
+      width: 32px;
+      height: 32px; }
+    .mobile-menu-network__linkedin {
+      background: black;
+      width: 32px;
+      height: 32px; }
+      .mobile-menu-network__linkedin > img {
+        width: 100%; }
+
+.presentation {
+  height: 100vh; }
+  .presentation_texts {
+    padding: 25vh 50px 0 50px;
+    background: #4831d4; }
+    .presentation_texts_title {
+      max-width: 220px; }
+      .presentation_texts_title > h1 {
+        font-size: 5em;
+        line-height: 1.1;
+        margin-bottom: .5em; }
+      .presentation_texts_title > h2 {
+        font-size: 2em; }
+    .presentation_texts_subtitle {
+      margin-top: 60px;
+      display: flex; }
+      .presentation_texts_subtitle > p {
+        display: block;
+        max-width: 170px; }
+        .presentation_texts_subtitle > p:first-child {
+          margin-right: 25px; }
