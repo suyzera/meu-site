@@ -9,8 +9,8 @@ Este projeto é uma página simples criada para mostrar minhas experiências pro
 ## Tecnologias Utilizadas
 
 - HTML5
-- CSS3 (Sass)
-- JavaScript (se aplicável)
+- CSS3 
+- JavaScript 
 
 ## Funcionalidades
 
