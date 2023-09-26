@@ -287,3 +287,7 @@ textarea {
       height: 32px; }
       .mobile-menu-network__linkedin > img {
         width: 100%; }
+
+@media only screen and (min-width: 75em) {
+  .mobile-menu {
+    padding: 5%; } }

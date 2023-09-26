@@ -98,3 +98,9 @@
   }
 
 }
+
+@include respond(big-desktop) {
+  .mobile-menu {
+    padding: 5%;
+  }
+}
