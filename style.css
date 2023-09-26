@@ -292,4 +292,6 @@ textarea {
 
 @media only screen and (min-width: 75em) {
   .header {
+    padding: 4%; }
+  .mobile-menu {
     padding: 4%; } }
