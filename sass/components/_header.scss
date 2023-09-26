@@ -8,11 +8,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 3;
 
   .logo {
     width: 70px;
     height: 35px;
   }
+
+  .menu {
+    flex-direction: column;
+    cursor: pointer;
+
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 3px 0;
+      border-radius: 2px;
+    }
+  }
+
+
+
 }
 
 .mobile-menu {
