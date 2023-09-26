@@ -99,13 +99,13 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (min-width: 56.25em) and (max-width: 75em) {
     html {
       font-size: 59%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 37.51em) and (max-width: 56.25em) {
     html {
       font-size: 56%; } }
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (min-width: 75em) {
     html {
       font-size: 65%; } }
 
@@ -148,7 +148,7 @@ textarea {
     padding: 20vh 50px 0 50px;
     background: #4831d4; }
     .presentation_texts_title {
-      max-width: 220px; }
+      max-width: 280px; }
       .presentation_texts_title > h1 {
         font-size: 5em;
         line-height: 1.1;
@@ -175,6 +175,51 @@ textarea {
     .presentation_profile img {
       margin: 0 auto;
       max-width: 200px; }
+
+@media only screen and (min-width: 37.51em) and (max-width: 56.25em) {
+  .presentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    .presentation_texts {
+      height: 100%;
+      grid-column: 1 / 3; }
+    .presentation_profile {
+      position: relative;
+      grid-column: 3 / 4; }
+      .presentation_profile > img {
+        position: absolute;
+        left: -50px;
+        z-index: 2; } }
+
+@media only screen and (min-width: 56.25em) and (max-width: 75em) {
+  .presentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    .presentation_texts {
+      height: 100%;
+      grid-column: 1 / 3; }
+    .presentation_profile {
+      position: relative;
+      grid-column: 3 / 4; }
+      .presentation_profile > img {
+        position: absolute;
+        left: -50px;
+        z-index: 2; } }
+
+@media only screen and (min-width: 75em) {
+  .presentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    .presentation_texts {
+      height: 100%;
+      grid-column: 1 / 3; }
+    .presentation_profile {
+      position: relative;
+      grid-column: 3 / 4; }
+      .presentation_profile > img {
+        position: absolute;
+        left: -50px;
+        z-index: 2; } }
 
 .header {
   position: fixed;
