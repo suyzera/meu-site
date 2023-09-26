@@ -100,7 +100,7 @@
 }
 
 @include respond(big-desktop) {
-  .mobile-menu {
-    padding: 5%;
+  .header {
+    padding: 4%;
   }
 }
