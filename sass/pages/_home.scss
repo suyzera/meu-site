@@ -1,0 +1,57 @@
+.presentation {
+    height: 100vh;
+
+    &_texts {
+        height: 80%;
+        padding: 20vh 50px 0 50px;
+        background: #4831d4;
+
+        &_title {
+            max-width: 220px;
+
+            >h1 {
+                font-size: 5em;
+                line-height: 1.1;
+                margin-bottom: .5em;
+                color: #ccf381;
+            }
+
+            >h2 {
+                font-size: 2em;
+                color: #FFF;
+            }
+        }
+
+        &_subtitle {
+            margin-top: 40px;
+            display: flex;
+
+            >p {
+                display: block;
+                max-width: 170px;
+                font-size: 1.2em;
+                color: #FFF;
+
+                &:first-child {
+                    margin-right: 25px;
+                }
+
+            }
+        }
+    }
+
+    &_profile {
+        background-color: #ccf381;
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+
+        img {
+            margin: 0 auto;
+            max-width: 200px;
+        }
+    }
+
+
+    @include respond($tab-port)
+}
